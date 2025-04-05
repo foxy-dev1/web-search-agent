@@ -27,8 +27,8 @@ A Python-based chatbot built with LangChain and LangGraph, integrating multiple 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/foxy-dev1/web-search-agent.git
+   cd web-search-agent
    ```
 
 2. **Install Dependencies**:
@@ -49,16 +49,12 @@ A Python-based chatbot built with LangChain and LangGraph, integrating multiple 
 
 5. **Set Up Searx**:
    - Run a local Searx instance (e.g., via Docker):
-  $ mkdir my-instance
-  $ cd my-instance
-  $ export PORT=8080
-  $ docker pull searxng/searxng
-  $ docker run --rm \
-             -d -p ${PORT}:8080 \
-             -v "${PWD}/searxng:/etc/searxng" \
-             -e "BASE_URL=http://localhost:$PORT/" \
-             -e "INSTANCE_NAME=my-instance" \
-             searxng/searxng
+     ```bash
+     mkdir my-instance
+     cd my-instance
+     export PORT=8080
+     docker pull searxng/searxng
+     docker run --rm -d -p ${PORT}:8080 -v "${PWD}/searxng:/etc/searxng" -e "BASE_URL=http://localhost:$PORT/" -e "INSTANCE_NAME=my-instance" searxng/searxng
 
 ## Usage
 
@@ -80,7 +76,7 @@ A Python-based chatbot built with LangChain and LangGraph, integrating multiple 
 ## Project Structure
 
 ```
-<your-repo-name>/
+web-search-agent/
 │
 ├── app_new.py      # Main script with chatbot logic
 ├── credentials.json      # Gmail API credentials (not tracked in git)
