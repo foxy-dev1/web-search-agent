@@ -1,0 +1,17 @@
+langchain-community
+langchain
+selenium
+langchain-google-community
+langchain-google-genai
+pytest-playwright
+streamlit
+pytesseract
+opencv-python-headless
+wikipedia
+pydantic
+langchain-core
+langgraph     
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
